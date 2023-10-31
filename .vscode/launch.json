@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "Launch service",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Debug service",
+            "protocol": "inspector",
+            "restart": true,
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
